@@ -134,7 +134,7 @@ def main(unused_argv):
         num_steps = config.early_exit_steps
     else:
         num_steps = config.max_steps
-    init_step = 0
+    # init_step = 0
     with logging_redirect_tqdm():
         tbar = tqdm(range(init_step + 1, num_steps + 1),
                     desc='Training', initial=init_step, total=num_steps,
